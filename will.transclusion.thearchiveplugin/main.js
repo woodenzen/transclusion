@@ -84,6 +84,6 @@ if (linesWith12DigitNumber.length === 0) {
 // Output the concatenated content
 console.log("Draft Content:\n", draftContent);
 // Set the output with the described filename
-output.changeFile.filename = `${title} ${uid}`;
+output.changeFile.filename = `${uid} ${title}`;
 output.changeFile.content = draftContent.trim();
 output.pasteboard.content = draftContent.trim();
