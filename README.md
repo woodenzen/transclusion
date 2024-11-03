@@ -1,4 +1,4 @@
-## Transclusion Plugin for The Archive
+# Transclusion Plugin for The Archive
 @created on     : 2024-10-28
 
 This repository creates a note for the transclusion/concatenating of multiple notes together in a single note as a plug-in for [The Archive](https://zettelkasten.de/the-archive/). 
