@@ -1,33 +1,25 @@
-# Example Plug-In for The Archive
+## Transclusion Plugin for The Archive
+@created on     : 2024-10-28
 
-This repository provides an example "Hello World" plug-in for [The Archive](https://zettelkasten.de/the-archive/). It includes the necessary folder and file structure along with helpful tips on handling releases.
+This repository creates a note for the transclusion/concatenating of multiple notes together in a single note as a plug-in for [The Archive](https://zettelkasten.de/the-archive/). 
 
-## Getting Started
+## Getting the template or root file set up.
 
-To create your own plug-in:
+To create your root note:
 
-1. **Copy, clone, or fork this repository.**
-2. **Customize it to your needs.**
-3. **Build and test your plug-in.**
-4. **Share your plug-in with others.**
+1. The template note must contain a list of note titles or links
+2. One on each line in the order desired
+3. Everything else in the template file will be ignored
+
+To activate the plugin
+
+1. The user must have the template note open
+2. The user is prompted for a title for the output file
+3. The filename is made with the current timestamp
+4. No front matter is inserted at the top of the created note
+5. The output is also copied to the clipboard for placement is other applications
+6. The timestamp is precise to the minute
 
 ### Customization
 
-- **Rename Your Plug-In**: Choose a name for your plug-in and update it in the manifest file.
-- **Set a Unique Identifier**: Define a unique identifier in the format `com.example.plugin-name` and specify it in the manifest file. Ensure the folder name matches this identifier, e.g., `com.example.plugin-name.thearchiveplugin`. Note: The Archive requires plug-ins to follow this naming convention.
-
-## Development
-
-We recommend using The Archive's developer console for plug-in development. The console provides tools for debugging and configuring the manifest file options.
-
-For more details, check out the official [developer documentation](https://zettelkasten.de/the-archive/help/plugins/).
-
-## Releasing Your Plug-In
-
-The Archive plug-ins are distributed as folders with the extension `.thearchiveplugin`. To share your plug-in, package it in a zip file containing the plug-in folder and all associated files.
-
-### Release Steps
-
-1. **Update the Version**: Increment the plug-in version in the manifest file and commit your changes.
-2. **Zip the Plug-In Folder**: Compress the folder with the `.thearchiveplugin` extension.
-3. **Publish Your Release**: Add the zip file to your repository or create a release on GitHub with the zip file attached.
+- In the line "output.changeFile.filename = `${title} ${uid}`;", the uid and title can be switched.

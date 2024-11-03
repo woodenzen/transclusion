@@ -1,0 +1,32 @@
+{
+  "appVersion" : "1.8.0",
+  "authors" : [
+    {
+      "name": "Will Simpson",
+      "url": "https://kestrelcreek.com"
+    }
+  ],
+  "description" : "Transclude notes into the current note.",
+  "identifier" : "will.transclusion",
+  "input" : {
+    "notes" : [
+      "all",
+      "selected"
+    ],
+    "pasteboard" : false,
+    "text" : [
+      "all"
+    ]
+  },
+  "output" : {
+    "changeFile" : {
+      "programmaticFilename" : true
+    },
+    "onCompletion" : "showFile",
+    "pasteboard" : true
+  },
+  "releaseDate" : "2024-11-03",
+  "title" : "Note Transclusion",
+  "version" : "0.2",
+  "dependencies" : []
+}
