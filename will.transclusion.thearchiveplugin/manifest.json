@@ -6,7 +6,7 @@
       "url": "https://kestrelcreek.com"
     }
   ],
-  "description" : "Transclude notes into the current note.",
+  "description" : "Transcluding: You can take a group of your notes and concatenate them together, creating a larger document. This is how you do it. Generate a note with a list of note titles or links (one per line) in the order you want them to appear in the final note. The note can contain other text that will not be included in the final transcluded text as long as the titles or links are each on a separate line. Select the note with the list and launch the plugin. Enter a name for the new file. The plugin not only creates a new file but also places the text on the system clipboard so you can paste it into any application.",
   "identifier" : "will.transclusion",
   "input" : {
     "notes" : [
