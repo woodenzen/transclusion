@@ -1,0 +1,33 @@
+{
+  "appVersion" : "1.8.0",
+  "authors" : [
+    {
+      "name" : "Will Simpson (@Will)"
+    }
+  ],
+  "dependencies" : [
+
+  ],
+  "description" : "Transcluding: You can take a group of your notes and concatenate them together, creating a larger document. This is how you do it. Generate a note with a list of note titles or links (one per line begining with %%% and a space then the note title.) in the order you want them to appear in the final note. \n\nThe note can contain other referencee text that will not be included in the final transcluded text as long as the titles or links are each on a separate line that begins with %%% and a space then the note title. Select the note and launch the plugin.\n\nExample = \n%%% My Book Introduction\n%%% Chapter One\n\nThe plugin will generate a plugin window with the results and also places the text on the system clipboard so you can paste it into any application.",
+  "identifier" : "com.will.transclusion",
+  "input" : {
+    "notes" : [
+      "all",
+      "selected"
+    ],
+    "pasteboard" : false,
+    "text" : [
+      "all"
+    ]
+  },
+  "output" : {
+    "changeFile" : {
+      "programmaticFilename" : true
+    },
+    "pasteboard" : true,
+    "showPreview" : "buffer"
+  },
+  "releaseDate" : "2024-11-08",
+  "title" : "Transclusion & Note Catenation ",
+  "version" : "0.3.0"
+}
