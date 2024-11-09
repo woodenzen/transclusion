@@ -97,7 +97,7 @@ You can intersperse them with other text, but the line with each note must start
         const note = input.notes.all.find(note => note.filename === filename);
         if (note && note.content) {
             // Append the note's content to draftContent
-            draftContent += `${note.content.trim()}\n`;
+            draftContent += `${note.content}\n`;
             console.log(`Appended content from "${filename}".`);
         } else {
             console.error(`Note with filename "${templateNotename}" not found or has no content.`);
@@ -128,9 +128,9 @@ console.log("Draft Content:\n", draftContent);
 
 // Set the output with the described filename
 // output.changeFile.filename = `${title} ${uid}`; // Assuming .md extension
-//STUB - output.changeFile.content = draftContent.trim();
-output.pasteboard.content = draftContent.trim();
-output.display.content = draftContent.trim();
+// output.changeFile.content = draftContent;
+output.pasteboard.content = draftContent;
+output.display.content = draftContent;
 
 // Log the output assignments for verification
 console.log(`Output Filename: ${output.changeFile.filename}`);
